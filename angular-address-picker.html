@@ -1,0 +1,34 @@
+<div class="address-picker">
+	<div class="container">
+		<div class="group">
+			<div class="select-box">
+				<div class="placeholder">{{provinces[picker.province]||'请选择省份'}}</div>
+				<i class="arrow-down"></i>
+				<select ng-model="picker.province" ng-change="selectProvince(picker.province)" ng-options="key as value for (key,value) in provinces">
+				</select>
+			</div>
+		</div>
+		<div class="group">
+			<div class="select-box">
+				<div class="placeholder">{{cities[picker.city]||'请选择城市'}}</div>
+				<i class="arrow-down"></i>
+				<select ng-model="picker.city" ng-change="selectCity(picker.city)" ng-options="key as value for (key,value) in cities">
+				</select>
+			</div>
+		</div>
+		<div class="group">
+			<div class="select-box">
+				<div class="placeholder">{{areas[picker.district]||'请选择区'}}</div>
+				<i class="arrow-down"></i>
+				<select ng-model="picker.district" ng-options="key as value for (key,value) in areas">
+				</select>
+			</div>
+		</div>
+		<div class="group">
+			<div class="button-list">
+				<a class="button button-success" ng-click="select()">确定</a>
+				<a class="button button-default" ng-click="cancel()">取消</a>
+			</div>
+		</div>
+	</div>
+</div>

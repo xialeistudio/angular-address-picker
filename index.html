@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="zh-cn">
+	<meta charset="UTF-8">
+	<title>Select</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+	<style>
+		input {
+			font-family: "Consolas", "Microsoft Yahei", Arial, monospace;
+			padding: 4px;
+			outline: 0;
+		}
+	</style>
+</head>
+<body>
+<input type="text" ng-init="address='北京 北京市 大兴区'" readonly value="{{address}}" ng-model="address" address-picker=""/>
+<script src="vendor/angularjs/angular.js"></script>
+<script src="angular-address-picker.js"></script>
+</body>
+</html>

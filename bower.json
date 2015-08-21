@@ -1,0 +1,27 @@
+{
+  "name": "angular-address-picker",
+  "version": "1.0.0",
+  "homepage": "https://github.com/xialeistudio/angular-address-picker",
+  "authors": [
+    "xialeistudio <1065890063@qq.com>"
+  ],
+  "description": "a angular address picker",
+  "main": "index.html",
+  "keywords": [
+    "angularjs",
+    "angular",
+    "address",
+    "picker"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.4.4"
+  }
+}
